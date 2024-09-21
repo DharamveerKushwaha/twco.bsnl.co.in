@@ -791,7 +791,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  /* padding: 60px 0; */
+  padding: 6px 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -1020,12 +1020,12 @@ section,
   color: var(--accent-color);
 }
 
-.about .read-more {
+  .btn {
   background: var(--accent-color);
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   padding: 10px 28px;
   border-radius: 5px;
@@ -1035,18 +1035,18 @@ section,
   justify-content: center;
 }
 
-.about .read-more i {
+.btn i {
   font-size: 18px;
   margin-left: 5px;
   line-height: 0;
   transition: 0.3s;
 }
 
-.about .read-more:hover {
+.btn:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.about .read-more:hover i {
+.btn:hover i {
   transform: translate(5px, 0);
 }
 
@@ -1105,7 +1105,7 @@ section,
   color: var(--default-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 40px;
-  margin: -1px;
+  margin: 0px;
   border-radius: 0;
 }
 
@@ -2065,6 +2065,89 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
+/* .starter-section { */
   /* Add your styles here */
+/* } */
+
+.starter-section  .presidnetimg {
+  height: 280px;
+  width: 20%;
+  float: left;
+  margin-right: 15px;
+}
+.starter-section  p {
+  margin-bottom: 1rem;
+  font-size: inherit;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+.justify{
+  text-align:justify;
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery .gallery-item img {
+  transition: 0.3s;
+}
+
+.gallery .gallery-links {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.gallery .gallery-links .preview-link,
+.gallery .gallery-links .details-link {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  line-height: 1.2;
+  margin: 30px 8px 0 8px;
+}
+
+.gallery .gallery-links .preview-link:hover,
+.gallery .gallery-links .details-link:hover {
+  color: #ffffff;
+}
+
+.gallery .gallery-links .details-link {
+  font-size: 30px;
+  line-height: 0;
+}
+
+.gallery .gallery-item:hover .gallery-links {
+  opacity: 1;
+}
+
+.gallery .gallery-item:hover .preview-link,
+.gallery .gallery-item:hover .details-link {
+  margin-top: 0;
+}
+
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.glightbox-clean .gslide-description {
+  background: #272727;
+}
+
+.glightbox-clean .gslide-title {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+.center{
+  text-align: center;
 }
