@@ -1037,7 +1037,7 @@ section,
   color: var(--accent-color);
 }
 
-  .btn {
+  /* .btn {
   background: var(--accent-color);
   color: var(--contrast-color);
   font-family: var(--heading-font);
@@ -1050,6 +1050,10 @@ section,
   display: inline-flex;
   align-items: center;
   justify-content: center;
+} */
+
+.cmd{
+margin-bottom:5px;
 }
 
 .btn i {
