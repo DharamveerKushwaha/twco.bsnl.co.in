@@ -1014,13 +1014,7 @@ section,
   .clients .client-logo {
     margin-left:0px;
   }
-  .presidentImg{
-    height: 240px;
-    width: 35%;
-    float: left;
-    margin-right: 15px;
   
-    }
 }
 
 /*--------------------------------------------------------------
@@ -2098,7 +2092,7 @@ section,
 
 .starter-section  .presidentImg {
   height: 280px;
-  width: 20%;
+  /* width: 20%; */
   float: left;
   margin-right: 15px;
 }
