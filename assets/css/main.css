@@ -988,7 +988,6 @@ section,
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-left:30px;
 }
 
 .clients .client-logo img {
@@ -1055,6 +1054,15 @@ section,
 .cmd{
 margin-bottom:5px;
 }
+
+.cmd:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.cmd:hover i {
+  transform: translate(5px, 0);
+}
+
 
 .btn i {
   font-size: 18px;
