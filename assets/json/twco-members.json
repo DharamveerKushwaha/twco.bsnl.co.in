@@ -1,0 +1,32 @@
+[
+  { "post": "President", "names": ["Mrs. Manjari Purwar"] },
+  { "post": "Co-President", "names": ["Mrs. Renuka Malik"] },
+  {
+    "post": "Vice-President",
+    "names": [
+      "Mrs. Shashi Banzal",
+      "Mrs. Sailaja V Ramesh",
+      "Mrs. Anurag Kumari",
+      "Mrs. Arti Govil",
+      "Mrs. Jyoti Kumar"
+    ]
+  },
+  { "post": "Secretary", "names": ["Mrs. Seema Nain"] },
+  { "post": "Treasurer", "names": ["Mrs. Meghna Chiraniya"] },
+  {
+    "post": "Joint Secretary",
+    "names": ["Mrs. Aparna Singh (Chemmary Center In-charge)"]
+  },
+  {
+    "post": "Executive Members",
+    "names": [
+      "Mrs. Kalpana Gupta (HM8 Center In-charge)",
+      "Mrs. Jayashri Bisoyi (T9 Center In-charge)",
+      "Mrs. Poonam Sharma (Kalibari Center In-charge)",
+      "Mrs. Rashmi Gupta (Chemmary Center In-charge)",
+      "Mrs. Sharmili Jaiswal",
+      "Mrs. Swapnil Sinha (T9 Center In-charge)",
+      "Mrs. Abhilasha Agarwal (Kalibari Center In-charge)"
+    ]
+  }
+]
