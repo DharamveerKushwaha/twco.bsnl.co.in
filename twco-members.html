@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Telecom Woman Central Organisation</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/twco.png" rel="icon" />
+    <link href="assets/img/twco.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </head>
+  <body class="starter-page-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/twco.png" alt="" />
+          <h1 class="sitename">TWCO</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li>
+              <a href="president-desk.html" class="active">President's Desk</a>
+            </li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="header-social-links">
+          <a href="#" target="_blank" class="twitter"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100083893852094&mibextid=ZbWKwL"
+            target="_blank"
+            class="facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/invites/contact/?i=xeg3h1j2n3if&utm_content=reiz29d"
+            target="_blank"
+            class="instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <!-- Starter Section Section -->
+      <section id="starter-section" class="starter-section section">
+        <!-- Section Title -->
+        <div class="container section-title">
+            <h2>Governing Body of TWCO</h2>
+        </div>
+        <!-- End Section Title -->
+        <!--content here-->
+        <div class="container" >
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <section>
+                        <div id="data"></div>
+                        <script>
+                          $(document).ready(function () {
+                            $.getJSON("assets/json/twco-members.json", function (data) {
+                              var text = "";
+                              //iterate
+                              $.each(data, function (key, value) {
+                                //row construct
+                                text +=
+                                  '<div class="alert alert-primary"><strong> ' +
+                                  value.post +
+                                  " </strong></div>";
+                                $.each(value.names, function (key, value) {
+                                  text +=
+                                    '<div class="alert alert-secondary"> ' +
+                                    value +
+                                    " </div>";
+                                });
+                              });
+                              //rows to table
+                              $("#data").append(text);
+                            });
+                          });
+                        </script>
+                      </section>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+       
+    </div>
+      </section>
+      <!-- /Starter Section Section -->
+    </main>
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-geo-alt icon"></i>
+            <div class="address">
+              <h4>Address</h4>
+              <p>H.M. -8, Telegraph Lane Atul Grove Road</p>
+              <p>New Delhi - 111001</p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-telephone icon"></i>
+            <div>
+              <h4>Contact</h4>
+              <p>
+                <strong>Phone :</strong> <span>91-11-23326861</span><br />
+                &emsp;&emsp;&emsp;&ensp;<span>&nbsp;91-11-23326111</span>
+                <br />
+                <strong>Email :</strong> &ensp;<span>twcohm8@gmail.com</span
+                ><br />
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-link icon"></i>
+            <div>
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h4>Follow Us</h4>
+            <div class="social-links d-flex">
+              <a href="#" target="_blank" class="twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100083893852094&mibextid=ZbWKwL"
+                target="_blank"
+                class="facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/invites/contact/?i=xeg3h1j2n3if&utm_content=reiz29d"
+                target="_blank"
+                class="instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename"
+            >Telecom Woman Central Organisation</strong
+          >
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://twco.bsnl.co.in/index.php">TWCO</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
